@@ -413,6 +413,35 @@ body{background:var(--paper);color:var(--ink)}
   color:#654450;
 }
 
+
+/* 2026-11-06 / mobile services images: focal point, orientation, real laser procedure */
+.directions-section .direction-card[data-category="Ресницы"] .direction-image img{
+  object-fit:cover;
+  object-position:50% 29%;
+}
+.directions-section .direction-card[data-category="Брови"] .direction-image img{
+  object-fit:cover;
+  object-position:50% 51%;
+  transform:rotate(180deg) scale(1.01);
+  transform-origin:center center;
+}
+.directions-section .direction-card[data-category="Брови"]:hover .direction-image img{
+  transform:rotate(180deg) scale(1.055);
+}
+.directions-section .direction-card[data-category="Эпиляция"] .direction-image img{
+  object-fit:cover;
+  object-position:50% 65%;
+}
+.directions-section .direction-card-feature .direction-info p{
+  color:#65505b;
+  opacity:1;
+}
+@media(max-width:650px){
+  .directions-section .direction-card[data-category="Ресницы"] .direction-image img{
+    object-position:50% 27%;
+  }
+}
+
 </style>
 
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BeautySalon","name":"ПроБрови","description":"Студия красоты: брови, наращивание ресниц, перманентный макияж, лазерная эпиляция","telephone":"+79096933000","url":"https://brovipm.ru/","address":{"@type":"PostalAddress","streetAddress":"проспект Космонавтов, 34Б, ТЦ Юпитер, павильон 205, 2 этаж","addressLocality":"Королёв","addressRegion":"Московская область","addressCountry":"RU"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"08:00","closes":"22:00"}],"sameAs":["https://www.instagram.com/probrovi_korolov/","https://vk.com/id754919063","https://yandex.ru/maps/org/probrovi/90093609931/"]}</script>
@@ -485,7 +514,7 @@ body{background:var(--paper);color:var(--ink)}
           <a href="#prices" class="direction-card direction-card-feature reveal" data-category="Ресницы"><div class="direction-image image-frame" data-fallback="01"><img class="remote-photo" loading="lazy" decoding="async" src="https://f2.dikidi.net/c18/v17481/2513p3b22p.jpg" alt="Результат процедур для ресниц в ПроБрови" referrerpolicy="no-referrer" /></div><span class="direction-num">01 / ВЗГЛЯД</span><div class="direction-info"><div><h3>Ресницы</h3><p>Наращивание, ламинирование и выразительный взгляд</p></div><span class="circle-arrow"><svg><use href="#i-arrow-up-right"/></svg></span></div></a>
           <a href="#prices" class="direction-card reveal" data-category="Брови"><div class="direction-image image-frame" data-fallback="02"><img class="remote-photo" loading="lazy" decoding="async" src="https://f2.dikidi.net/c18/v17481/5qahk5e32f.jpg" alt="Работа мастеров студии ПроБрови" referrerpolicy="no-referrer" /></div><span class="direction-num">02 / ФОРМА</span><div class="direction-info"><div><h3>Брови</h3><p>Архитектура, окрашивание и долговременная укладка</p></div><span class="circle-arrow"><svg><use href="#i-arrow-up-right"/></svg></span></div></a>
           <a href="#prices" class="direction-card reveal" data-category="Перманент"><div class="direction-image image-frame" data-fallback="03"><img class="remote-photo" loading="lazy" decoding="async" src="https://f2.dikidi.net/c18/v17481/6di8p1nh3o.jpg" alt="Процедуры перманентного макияжа студии ПроБрови" referrerpolicy="no-referrer" /></div><span class="direction-num">03 / ХАРАКТЕР</span><div class="direction-info"><div><h3>Перманент</h3><p>Брови, губы и межресничное пространство</p></div><span class="circle-arrow"><svg><use href="#i-arrow-up-right"/></svg></span></div></a>
-          <a href="#prices" class="direction-card reveal" data-category="Эпиляция"><div class="direction-image direction-image-abstract image-frame" data-fallback="04"><div class="abstract-bloom" aria-hidden="true"></div></div><span class="direction-num">04 / ЛЁГКОСТЬ</span><div class="direction-info"><div><h3>Лазер и уход</h3><p>Эпиляция, карбоновый пилинг, удаление перманента</p></div><span class="circle-arrow"><svg><use href="#i-arrow-up-right"/></svg></span></div></a>
+          <a href="#prices" class="direction-card reveal" data-category="Эпиляция"><div class="direction-image image-frame" data-fallback="04"><img class="remote-photo" loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1700760933941-3a06a28fbf47?auto=format&fit=crop&w=900&q=82" alt="Процедура лазерной эпиляции, иллюстративная фотография" referrerpolicy="no-referrer" /></div><span class="direction-num">04 / ЛЁГКОСТЬ</span><div class="direction-info"><div><h3>Лазер и уход</h3><p>Эпиляция, карбоновый пилинг, удаление перманента</p></div><span class="circle-arrow"><svg><use href="#i-arrow-up-right"/></svg></span></div></a>
         </div>
       </div>
     </section>
