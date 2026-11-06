@@ -382,6 +382,37 @@ body{background:var(--paper);color:var(--ink)}
   .prices-section .price-amount{font-size:15px}
 }
 
+
+/* Experience section contrast fix — keep all text readable on the dusty-rose panel. */
+.experience{
+  --experience-bg:#946b78;
+  --experience-text:#fffaf8;
+  --experience-accent:#fff1e9;
+  --experience-soft:#fff4ef;
+  background:var(--experience-bg);
+  color:var(--experience-text);
+}
+.experience .experience-copy{background:var(--experience-bg);color:var(--experience-text);}
+.experience .section-kicker,
+.experience .section-kicker-light{color:var(--experience-accent);}
+.experience h2{color:var(--experience-text);}
+.experience h2 em{color:var(--experience-accent);}
+.experience .experience-copy p{color:var(--experience-soft);}
+.experience .experience-list>div{color:var(--experience-text);}
+.experience .experience-check{
+  background:rgba(73,57,65,.36);
+  color:var(--experience-accent);
+}
+.experience .btn-outline{
+  border-color:rgba(255,250,248,.78);
+  color:var(--experience-text);
+}
+.experience .btn-outline:hover,
+.experience .btn-outline:focus-visible{
+  background:#fffaf8;
+  color:#654450;
+}
+
 </style>
 
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BeautySalon","name":"ПроБрови","description":"Студия красоты: брови, наращивание ресниц, перманентный макияж, лазерная эпиляция","telephone":"+79096933000","url":"https://brovipm.ru/","address":{"@type":"PostalAddress","streetAddress":"проспект Космонавтов, 34Б, ТЦ Юпитер, павильон 205, 2 этаж","addressLocality":"Королёв","addressRegion":"Московская область","addressCountry":"RU"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"08:00","closes":"22:00"}],"sameAs":["https://www.instagram.com/probrovi_korolov/","https://vk.com/id754919063","https://yandex.ru/maps/org/probrovi/90093609931/"]}</script>
