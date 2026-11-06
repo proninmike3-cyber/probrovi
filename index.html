@@ -171,6 +171,217 @@ body{background:var(--paper);color:var(--ink)}
   color:#6d5963;
 }
 
+
+/* Readable prices v2 — increase text and tap targets on desktop and mobile. */
+.prices-section .price-shell{
+  font-size:16px;
+}
+.prices-section .price-topline{
+  padding:24px 30px;
+  gap:18px;
+}
+.prices-section .price-topline strong{
+  font-size:16px;
+  line-height:1.4;
+}
+.prices-section .price-topline small{
+  font-size:12px;
+  line-height:1.55;
+  color:#76666e;
+}
+.prices-section .price-topline a{
+  font-size:13px;
+  line-height:1.45;
+  white-space:nowrap;
+}
+.prices-section .price-tools{
+  padding:22px 30px;
+  gap:15px;
+  align-items:center;
+  flex-wrap:wrap;
+}
+.prices-section .price-tabs{
+  gap:9px;
+  flex:1 1 650px;
+}
+.prices-section .price-tab{
+  font-size:13px;
+  line-height:1.3;
+  min-height:43px;
+  padding:11px 15px;
+}
+.prices-section .search-field{
+  width:240px;
+  flex:0 0 240px;
+  min-height:44px;
+  padding:0 15px;
+}
+.prices-section .search-field input{
+  font-size:16px;
+  min-height:44px;
+  padding:10px 0;
+}
+.prices-section .search-field>svg{width:18px;height:18px}
+.prices-section .price-list{
+  padding:14px 30px 12px;
+}
+.prices-section .price-category-title{
+  margin:21px 0 12px;
+  align-items:baseline;
+}
+.prices-section .price-category-title h3{
+  font-size:clamp(24px,2.15vw,30px);
+  line-height:1.25;
+}
+.prices-section .price-category-title span{
+  font-size:12px;
+  white-space:nowrap;
+  color:#76666e;
+}
+.prices-section .price-row{
+  padding:16px 0;
+  gap:24px;
+  align-items:baseline;
+}
+.prices-section .price-name{
+  font-size:16px;
+  line-height:1.6;
+  font-weight:650;
+}
+.prices-section .price-amount{
+  font-size:17px;
+  line-height:1.5;
+  font-weight:800;
+}
+.prices-section .price-footer{
+  padding:21px 30px;
+}
+.prices-section .price-footer span{
+  font-size:14px;
+}
+.prices-section .price-footer small{
+  font-size:12px;
+  line-height:1.6;
+  color:#78696d;
+}
+.prices-section .show-more{
+  font-size:14px;
+  min-height:42px;
+}
+.prices-section .price-empty p{
+  font-size:15px;
+}
+@media(max-width:900px){
+  .prices-section .price-tabs{
+    flex-basis:100%;
+    width:100%;
+  }
+  .prices-section .search-field{
+    order:1;
+    width:100%;
+    flex:1 1 100%;
+  }
+}
+@media(max-width:650px){
+  .prices-section .price-topline{
+    padding:18px 17px;
+    align-items:flex-start;
+  }
+  .prices-section .price-topline strong{
+    font-size:15px;
+  }
+  .prices-section .price-topline small{
+    font-size:12px;
+  }
+  .prices-section .price-topline a{
+    font-size:12px;
+    align-self:center;
+  }
+  .prices-section .price-tools{
+    padding:16px 17px;
+    gap:15px;
+  }
+  .prices-section .price-tabs{
+    order:2;
+    flex:0 0 auto;
+    flex-wrap:nowrap;
+    overflow-x:auto;
+    scrollbar-width:none;
+    width:calc(100% + 17px);
+    max-width:calc(100% + 17px);
+    margin-right:-17px;
+    padding-right:17px;
+    gap:8px;
+  }
+  .prices-section .price-tabs::-webkit-scrollbar{display:none}
+  .prices-section .price-tab{
+    font-size:13px;
+    min-height:44px;
+    padding:11px 14px;
+    flex-shrink:0;
+  }
+  .prices-section .search-field{
+    order:1;
+    min-height:46px;
+    width:100%;
+    flex:1 1 100%;
+  }
+  .prices-section .search-field input{
+    font-size:16px;
+    min-height:46px;
+  }
+  .prices-section .price-list{
+    padding:12px 17px;
+    min-height:250px;
+  }
+  .prices-section .price-category-title{
+    margin:16px 0 10px;
+    gap:9px;
+    align-items:baseline;
+  }
+  .prices-section .price-category-title h3{
+    font-size:clamp(21px,5.8vw,26px);
+    line-height:1.3;
+  }
+  .prices-section .price-category-title span{
+    font-size:12px;
+    flex-shrink:0;
+  }
+  .prices-section .price-row{
+    padding:15px 0;
+    gap:12px;
+    align-items:baseline;
+  }
+  .prices-section .price-name{
+    font-size:15px;
+    line-height:1.5;
+    min-width:0;
+  }
+  .prices-section .price-amount{
+    font-size:16px;
+    line-height:1.45;
+  }
+  .prices-section .price-footer{
+    padding:17px;
+    gap:12px;
+  }
+  .prices-section .price-footer span{
+    font-size:14px;
+  }
+  .prices-section .price-footer small{
+    font-size:12px;
+    max-width:none;
+  }
+  .prices-section .show-more{
+    font-size:14px;
+    min-height:44px;
+  }
+}
+@media(max-width:380px){
+  .prices-section .price-name{font-size:14px}
+  .prices-section .price-amount{font-size:15px}
+}
+
 </style>
 
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BeautySalon","name":"ПроБрови","description":"Студия красоты: брови, наращивание ресниц, перманентный макияж, лазерная эпиляция","telephone":"+79096933000","url":"https://brovipm.ru/","address":{"@type":"PostalAddress","streetAddress":"проспект Космонавтов, 34Б, ТЦ Юпитер, павильон 205, 2 этаж","addressLocality":"Королёв","addressRegion":"Московская область","addressCountry":"RU"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"08:00","closes":"22:00"}],"sameAs":["https://www.instagram.com/probrovi_korolov/","https://vk.com/id754919063","https://yandex.ru/maps/org/probrovi/90093609931/"]}</script>
