@@ -123,6 +123,54 @@ body{background:var(--paper);color:var(--ink)}
  .gallery-bottom{flex-wrap:wrap;font-size:11px;gap:9px}.contact-layout{border-radius:18px}
 }
 @media(max-width:380px){.hero h1{font-size:50px}.team-portrait{height:180px}.team-card-bottom h3{font-size:20px}.team-photo-caption{font-size:7px}}
+
+/* Contrast-safe contextual colors for the last CTA and light footer.
+   Do not reuse the generic rose accent for text on a rose background. */
+.final-cta{
+  --cta-bg:#926775;
+  --cta-text:#fffaf8;
+  --cta-accent:#fff2e8;
+  background:var(--cta-bg);
+  color:var(--cta-text);
+}
+.final-cta h2,
+.final-cta h2 em{color:var(--cta-text);}
+.final-cta h2 em{color:var(--cta-accent);}
+.final-cta .section-kicker,
+.final-cta .section-kicker-light{color:var(--cta-text);}
+.final-cta .final-cta-inner>a{
+  color:var(--cta-text);
+  border-color:rgba(255,250,248,.75);
+}
+.final-cta .final-cta-inner>a:hover,
+.final-cta .final-cta-inner>a:focus-visible{
+  background:#fffaf8;
+  color:#654450;
+}
+.footer{
+  background:#f5eae6;
+  color:#5c4853;
+}
+.footer .brand-words strong{color:#5c4853;}
+.footer .brand-words small{color:#6b5560;}
+.footer .footer-links a{
+  color:#5c4853;
+  font-weight:700;
+}
+.footer .footer-links a:hover,
+.footer .footer-links a:focus-visible{
+  color:#783e55;
+  text-decoration:underline;
+  text-underline-offset:4px;
+}
+.footer .footer-up{color:#5c4853;border-color:#91747d;}
+.footer .footer-up:hover,
+.footer .footer-up:focus-visible{background:#e6d2d3;}
+.footer .footer-bottom{
+  border-top-color:#d3bdc3;
+  color:#6d5963;
+}
+
 </style>
 
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BeautySalon","name":"ПроБрови","description":"Студия красоты: брови, наращивание ресниц, перманентный макияж, лазерная эпиляция","telephone":"+79096933000","url":"https://brovipm.ru/","address":{"@type":"PostalAddress","streetAddress":"проспект Космонавтов, 34Б, ТЦ Юпитер, павильон 205, 2 этаж","addressLocality":"Королёв","addressRegion":"Московская область","addressCountry":"RU"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"08:00","closes":"22:00"}],"sameAs":["https://www.instagram.com/probrovi_korolov/","https://vk.com/id754919063","https://yandex.ru/maps/org/probrovi/90093609931/"]}</script>
