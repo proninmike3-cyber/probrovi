@@ -1,0 +1,36 @@
+name: Mirror all website images into this repository
+
+on:
+  push:
+    paths:
+      - ".github/workflows/localize-images.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  mirror-assets:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout site
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Download and validate static images
+        run: python3 scripts/localize_images.py
+
+      - name: Commit all local images and updated page
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html assets/images
+          if git diff --cached --quiet; then
+            echo "All images already localized."
+          else
+            git commit -m "Store all ProBrovi images locally for reliable GitHub Pages"
+            git push origin HEAD:main
+          fi
